@@ -1,0 +1,29 @@
+<h1>Dashboard</h1>
+
+
+<br>
+
+<h1>My Items</h1>
+
+{{#each listOfItems}}
+
+<div>
+  <p>{{this.name}}</p>
+  <p>Size: {{this.size}}</p>
+  <p>Favorite color: {{this.favColor}}</p>
+  <p>Notes: {{this.description}}</p>
+  <p>Store where you can find it: {{this.toBeFound}}</p><br>
+  <a href="/items/{{this._id}}/edit">Edit Item</a>
+  
+  
+</form>
+<form action="/items/{{this._id}}/delete" method="post">
+<button>Delete This item</button>
+
+
+</div>
+<hr>
+
+{{/each}}
+<br>
+<a href="/items/new">create new item</a>

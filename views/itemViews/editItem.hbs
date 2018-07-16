@@ -1,0 +1,30 @@
+<h2>New Item</h2>
+
+
+<form action="/items/{{theItem.id}}/update" method="post">
+
+<label>Name</label>
+<input type="text" name="name" value="{{theItem.name}}">
+<br>
+
+<label>Size</label>
+<input type="text" name="size" value="{{theItem.size}}">
+<br>
+
+<label>Favorite color</label>
+<input type="text" name="favColor" value="{{theItem.favColor}}">
+<br>
+
+<label>Description</label>
+<input type="text" name="description" value="{{theItem.description}}">
+<br>
+
+<label>Store to be found</label>
+<input type="text" name="toBeFound" value="{{theItem.toBeFound}}">
+<br>
+
+
+<button type="submit">Save Item</button>
+
+
+</form>
