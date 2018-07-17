@@ -1,12 +1,33 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-
-
-
-{{#if theUser}}
+<h1>Very first page</h1>
+{{#if user}}
 <div>
-  <h2>{{theUser.username}}</h2>
+  <h2>Hi {{user.username}}!</h2>
 </div>
 {{/if}}
-<a href="/dashboard">go to dashboard</a>
-<a href="/logout"> logout</a>
+<a href="/signup">signup</a>
+<a href="/login">login</a>
+<a href="/logout">logout</a>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <a href="/dashboard">go to dashboard</a>
+<a href="/logout"> logout</a> --}}

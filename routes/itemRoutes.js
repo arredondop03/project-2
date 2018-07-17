@@ -5,11 +5,20 @@ const Item      = require('../models/item');
 /* GET home page */
 
 router.get('/items/new', (req, res, next) => {
-  res.render('itemViews/newItem');
+    Item.find()
+    .then((allTheItems)=>{
+        res.render('itemViews/newItem', {allTheItems});
+    })
+    .catch((err)=>{
+        next(err);
+    })
+  
+    // res.render('itemViews/newItem');
 });
 
 
 router.post('/items/create', (req, res, next)=>{
+    console.log('hey: ', req.body)
   const newItem = new Item({
    name: req.body.name,
    size: req.body.size,

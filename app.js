@@ -108,7 +108,13 @@ app.use(passport.session());
 
 // --------end of passport setup ---------
 
- 
+app.use ((req, res, next)=>{
+  if(req.user){
+    res.locals.user = req.user; // !!!!!!
+  }
+  next();
+});
+
 //--------   Routes  ---------------------
 
 const index = require('./routes/index');

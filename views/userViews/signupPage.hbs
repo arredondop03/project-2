@@ -1,18 +1,51 @@
 <h1>Signup</h1>
 
 
+
 <form action="/signup" method="post">
+<label for="name1">First name</label>
+<input id="name1"type="text" name="firstName"><br>
+
+<label for="name2">Last name</label>
+<input id="name2"type="text" name="lastName"><br>
+
+<label for="gender">Gender</label><br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other <br>
+
+<label for="bday"> Birthday:</label>
+  <input type="date" name="bday">
+<br>
+{{!-- <label for="email">Email</label> --}}
+
   <label for="username">Username</label>
-  <input id="username"type="text" name="theUsername">
+  <input id="username"type="text" name="theUsername"><br>
 
  <label for="password">Password</label>
-  <input id="password"type="password" name="thePassword">
+  <input id="password"type="password" name="thePassword"><br>
 
-  <button> Submit </button>
+   <label for="password">Confirm password</label>
+  <input id="password"type="password" name="confirmPassword"><br>
+
+  <button> Signup </button>
+  {{!-- <a href="/items/{{this._id}}/edit">Edit Item</a> --}}
+
+  
 
 </form>
-
-
+<br><br>
+<p>already a member?</p>
+<a href="/login">login</a>
 {{#if errorMessage}}
 <div>{{errorMessage}}</div>
 {{/if}}
+
+
+
+
+
+
+
+
+

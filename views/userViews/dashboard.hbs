@@ -3,6 +3,10 @@
 
 <br>
 
+<h1>My information</h1>
+<p>{{user}}</p>
+
+
 <h1>My Items</h1>
 
 {{#each listOfItems}}
@@ -16,7 +20,6 @@
   <a href="/items/{{this._id}}/edit">Edit Item</a>
   
   
-</form>
 <form action="/items/{{this._id}}/delete" method="post">
 <button>Delete This item</button>
 
