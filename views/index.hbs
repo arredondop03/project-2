@@ -31,7 +31,7 @@
 
             </li>
             <li>
-             <button class="btn btn-primary btn-round m-2">Login</button> 
+             <button class="btn btn-primary btn-round m-2 chinese-violet">Login</button> 
             </li>
           </ul>
       </div>
@@ -95,3 +95,20 @@ space-evenly: items are distributed so that the spacing between any two items (a
     </div>
   </div>
 </footer>
+
+<div>
+  <h1>Very first page</h1>
+{{#if user}}
+<div>
+  <h2>Hi {{user.username}}!</h2>
+
+  <a href="/dashboard">Go to your dashboard</a>
+  <br><br>
+</div>
+{{/if}}
+<a href="/signup">signup</a>
+<a href="/login">login</a>
+<a href="/logout">logout</a>
+
+<button class="btn btn-danger ">Default</button>
+</div>
