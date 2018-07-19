@@ -18,18 +18,12 @@ const ensureLogin            = require('connect-ensure-login')
 
 /////////          Models          ////////////
 const User                   = require('./models/user')
-
-
-
-
-
-
-
-
+const Item                   = require('./models/item')
+const Store                   = require('./models/store')
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/project-2', {useMongoClient: true})
+  .connect(process.env.MONGODB_URI, {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {
@@ -115,6 +109,8 @@ app.use ((req, res, next)=>{
   next();
 });
 
+
+
 //--------   Routes  ---------------------
 
 const index = require('./routes/index');
@@ -126,18 +122,8 @@ app.use('', authRoutes);
 const itemRoutes = require('./routes/itemRoutes');
 app.use('', itemRoutes);
 
-
-
-
-
-
-
-
-
-
-
-
-
+const storeRoutes = require('./routes/storeRoutes');
+app.use('', storeRoutes);
 
 
 module.exports = app;

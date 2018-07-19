@@ -11,17 +11,30 @@ const userSchema = new Schema({
   birthday:     Date,
   username:     String,
   password:     String,
-  img:          String,
+  image:        String,
   shirt:        String,
   pants:        String,
   shorts:       String,
   shoes:        String,
   skirt:        String,
   sweater:      String,
+  boxerBriefs:  {type: String, required: false},
+  bra:          {type: String, required: false},
+  panties:      {type: String, required: false},
+  dress:        {type: String, required: false},
+  jumper:       {type: String, required: false},
 
-  myItems:      [{type: Schema.Types.ObjectId, ref: 'Item'}],
-  favStores:    [{name: String, storeImg: String}]},
-  {timestamp: true}
+  myItems:      [{type: Schema.Types.ObjectId , ref: 'Item'}],
+  favUsers:     [{type: Schema.Types.ObjectId, ref: 'Store'}],
+  followers:    [{type: Schema.Types.ObjectId, ref: 'User'}],
+  following:    [{type: Schema.Types.ObjectId, ref: 'User'}]
+  },
+  {
+    usePushEach: true
+  },
+  { 
+    timestamp: true
+  }
 )
 
 const User = mongoose.model("User", userSchema) //creating user

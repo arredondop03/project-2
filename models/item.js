@@ -9,6 +9,7 @@ const itemSchema = new Schema({ //first parameter
   favColor: String,
   description: String,
   toBeFound: String,
+  owner: [{type: Schema.Types.ObjectId, ref: 'User'}]
 }, //second parameter
   {timestamp: true}
 )

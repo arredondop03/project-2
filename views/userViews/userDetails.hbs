@@ -1,0 +1,10 @@
+<div>
+  <p>{{theUser.username}}</p>
+  <form action="/users/{{theUser._id}}/followMe" method="post">
+    <button type="submit">Follow Me</button>
+  </form>
+  Followers:
+  {{#each theUser.followers}}
+    {{this.firstName}}
+  {{/each}}
+</div>

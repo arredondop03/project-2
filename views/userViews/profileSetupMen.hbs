@@ -1,5 +1,9 @@
-<h1>Profile Setup</h1>
-<form action="/profileSetup/{{user._id}}" method="post">
+<h1>Men profile Setup</h1>
+<form action="/profileSetupMen/{{user._id}}" method="post">
+
+{{!-- <input type="file" accept="image/* " id="file-input"> --}}
+
+<input type="file" name="photo"><br><br>
 
 <label for="shirt">Shirt Size</label>
 <select name="shirt">
@@ -11,7 +15,7 @@
 
 </select><br>
 
-<label for="shirt">Pants Size</label>
+<label for="pants">Pants Size</label>
 <select name="pants">
   <option  value="xs">Extra Small</option>
   <option value="s">Small</option>
@@ -21,7 +25,7 @@
 
 </select><br>
 
-<label for="shirt">Shorts Size</label>
+<label for="shorts">Shorts Size</label>
 <select name="shorts">
   <option  value="xs">Extra Small</option>
   <option value="s">Small</option>
@@ -31,7 +35,7 @@
 
 </select><br>
 
-<label for="shirt">Skirt Size</label>
+<label for="skirt">Skirt Size</label>
 <select name="skirt">
   <option  value="xs">Extra Small</option>
   <option value="s">Small</option>
@@ -41,7 +45,7 @@
 
 </select><br>
 
-<label for="shirt">Sweater Size</label>
+<label for="sweater">Sweater Size</label>
 <select name="sweater">
   <option  value="xs">Extra Small</option>
   <option value="s">Small</option>
@@ -51,7 +55,7 @@
 
 </select><br>
 
-<label for="shirt">Shoes Size</label>
+<label for="shoes">Shoes Size</label>
 <select name="shoes">
   <option  value="5">5</option>
   <option value="5.5">5.5</option>
@@ -71,11 +75,22 @@
   <option value="12.5">12.5</option>
 
 
-</select>
+</select><br>
+
+<label for="boxerBriefs">Boxer briefs Size</label>
+<select name="boxerBriefs">
+  <option  value="xs">Extra Small</option>
+  <option value="s">Small</option>
+  <option value="m">Medium</option>
+  <option value="l">Large</option>
+  <option value="xl">Extra Large</option>
+
+</select><br>
+
 
 <button type='submit'>Done</button>
 
-
-
-
 </form>
+
+
+<a href="/">home</a>

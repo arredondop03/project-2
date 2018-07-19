@@ -1,33 +1,97 @@
-<h1>Very first page</h1>
-{{#if user}}
-<div>
-  <h2>Hi {{user.username}}!</h2>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--  Fonts and icons  -->
+      <!--     Fonts and icons     -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.4" rel="stylesheet" />
+  </head>
+  <body></body>
+
+
+
+<nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
+  <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="/views/index.hbs">
+          Boon </a> 
+      </div>
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <button class="btn btn-primary btn-round m-2">Signup</button>
+
+            </li>
+            <li>
+             <button class="btn btn-primary btn-round m-2">Login</button> 
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('images/couple-with-big-gift.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="brand text-center">
+          <h1>Boon</h1>
+          <h3 class="title text-center">Making the gift buying process enjoyable</h3>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-{{/if}}
-<a href="/signup">signup</a>
-<a href="/login">login</a>
-<a href="/logout">logout</a>
 
+<div class="main main-raised">
+  <div class="container">
+    <div class="section text-center">
+      <h2 class="title">Your main section here
+        center: items are centered along the line
+space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+center: items are centered along the line
+space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.center: items are centered along the line
+space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.center: items are centered along the line
+space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+space-around: items are evenly distributed in the line with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
+space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+      </h2>
+    </div>
+  </div>
+</div>
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{{!-- <a href="/dashboard">go to dashboard</a>
-<a href="/logout"> logout</a> --}}
+<footer class="footer footer-default" >
+  <div class="container">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="https://www.creative-tim.com/">
+              Creative Tim
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right">
+        &copy;
+        <script>
+            document.write(new Date().getFullYear())
+        </script>, made with <i class="material-icons">favorite</i> by
+        <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
+    </div>
+  </div>
+</footer>

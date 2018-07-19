@@ -3,16 +3,70 @@
 
 <br>
 
-<h1>My information</h1>
-<p>{{user}}</p>
 
+
+<h1>My information</h1>
+{{#if user.image}}
+  <img src="{{user.image}}" alt="kjnk">
+{{/if}}
+<p>Name: <a href="/users/{{user._id}}">{{user.firstName}} {{user.lastName}} </a></p> 
+<form action="/users/{{user._id}}/followMe" method="post">
+  <button type="submit">Follow Me</button>
+</form>
+Followers:
+ {{#each theUser.following}}
+    {{this.firstName}}
+  {{/each}}
+<p>Gender: {{user.gender}}</p>
+<p>Birthday: {{user.birthday}}</p>
+<h1>Clothing sizes</h1>
+
+
+<p>shirt: {{user.shirt}}</p>
+<p>pants: {{user.pants}}</p>
+<p>shorts: {{user.shorts}}</p>
+<p>shoes: {{user.shoes}}</p>
+<p>skirt: {{user.skirt}}</p>
+<p>sweater: {{user.sweater}}</p>
+
+{{#if user.boxerBriefs}}
+<p>boxerBriefs: {{user.boxerBriefs}}</p>
+{{/if}}
+
+{{#if user.bra}}
+<p>bra: {{user.bra}}</p>
+{{/if}}
+
+{{#if user.panties}}
+<p>panties: {{user.panties}}</p>
+{{/if}}
+
+{{#if user.dress}}
+<p>dress: {{user.dress}}</p>
+{{/if}}
+
+{{#if user.jumper}}
+<p>jumper: {{user.jumper}}</p>
+{{/if}}
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br>
 
 <h1>My Items</h1>
 
-{{#each listOfItems}}
-
-<div>
-  <p>{{this.name}}</p>
+{{#each user.myItems}}
+<di>
+  {{this.name}}
   <p>Size: {{this.size}}</p>
   <p>Favorite color: {{this.favColor}}</p>
   <p>Notes: {{this.description}}</p>
@@ -22,6 +76,30 @@
   
 <form action="/items/{{this._id}}/delete" method="post">
 <button>Delete This item</button>
+</form>
+
+</div>
+<hr>
+
+{{/each}}
+
+
+
+
+<br> <br>
+<h1>My Favorite Stores</h1>
+
+{{#each user.favStores}}
+
+<div>
+  <p>{{this.name}}</p>
+   {{this.img}}
+  <p>link to page: {{this.linkToPage}}</p>
+  <a href="/stores/{{this._id}}/edit">Edit Item</a>
+  
+  
+<form action="/stores/{{this._id}}/delete" method="post">
+<button>Delete This item</button>
 
 
 </div>
@@ -30,3 +108,5 @@
 {{/each}}
 <br>
 <a href="/items/new">create new item</a>
+<a href="/stores/new">create new store</a>
+<a href="/">HOME</a>
