@@ -1,7 +1,72 @@
+<div>
+  <div class="upper-background-color">
+    <h1>Signup</h1>
+  </div>
+  <div class="lower-div" id="signupPage">
+    <div class="main main-raised signup-form">
+      <form action="/signup" class="form-center" method="post">
+        <label for="name1">First name</label>
+        <input class="form-control" id="name1"type="text" name="firstName"><br>
+        <label for="name2">Last name</label>
+        <input class="form-control" id="name2"type="text" name="lastName"><br>
+        <div class="form-check form-check-radio">
+          <label for="gender">Gender</label><br><br>
+          <div class="form-check form-check-radio">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="male" checked>
+              Male
+              <span class="circle">
+                <span class="check"></span>
+              </span>
+            </label>
+          </div>
+          <div class="form-check form-check-radio">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="female">
+              Female
+              <span class="circle">
+                <span class="check"></span>
+              </span>
+            </label>
+          </div>
+          <div class="form-check form-check-radio">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="other">
+              Other
+              <span class="circle">
+                <span class="check"></span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <br>
+        <div >
+          <br>
+          <label class="label-control"> Birthday </label>
+          <input name="bday" type="text" class="form-control datetimepicker text-center" value="09/20/2018"/>
+        </div>
+        <br><br>
+        <label for="username">Usename</label>
+        <input class="form-control" id="username" type="text" name="theUsername"><br>
+        <label for="password">Password</label>
+        <input class="form-control" id="password" type="text" name="thePassword"><br>
+        <label for="confirmPassword">Confirm Password</label>
+        <input class="form-control" id="confirmPassword" type="text" name="confirmPassword"><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{#if errorMessage}}
+<div>{{errorMessage}}</div>
+{{/if}}
+
+
+
+{{!-- 
+
 <h1>Signup</h1>
-
-
-
 <form action="/signup" method="post">
 <label for="name1">First name</label>
 <input id="name1"type="text" name="firstName"><br>
@@ -17,7 +82,7 @@
 <label for="bday"> Birthday:</label>
   <input type="date" name="bday">
 <br>
-{{!-- <label for="email">Email</label> --}}
+<label for="email">Email</label>
 
   <label for="username">Username</label>
   <input id="username"type="text" name="theUsername"><br>
@@ -29,10 +94,7 @@
   <input id="password"type="password" name="confirmPassword"><br>
 
   <button> Signup </button>
-  {{!-- <a href="/items/{{this._id}}/edit">Edit Item</a> --}}
-
-  
-
+  <a href="/items/{{this._id}}/edit">Edit Item</a>
 </form>
 <br><br>
 <p>already a member?</p>
@@ -44,11 +106,7 @@
 
 <a href="/">home</a>
 
-
-
-
-
-
+ --}}
 
 
 

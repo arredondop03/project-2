@@ -1,8 +1,133 @@
 body {
-  padding: 50px;
+  padding-top: 65px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+.dark-purple{
+  color: #331832;
+}
+.bg-isabelline {
+  background-color:  #eaeaea !important;
+}
+
+.mynav {
+  height: 65px;
+}
+
+.nav-logo img {
+  height: 50px;
+}
+
+.description-div{
+  margin: 5vh;
+}
+.product-description {
+ width: 430px;
+ margin: 10vh;
+ 
+}
+
+.product-description-div{
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+}
+
+.problem-description{
+  line-height: 3em;
+  list-style-type: none;
+  font-size: 1.26em;
+}
+
+.problem-description2{
+  line-height: 3em;
+  list-style-type: none;
+  font-size: 1.8em;
+}
+
+// .problem-description ul{
+//   list-style-type: none;
+// }
+
+
+
+.loginField{
+  background-color: #cbc5ea;
+  height: 70vh;
+  width: 60vh;
+  
+}
+.loginFieldOut{
+display: flex;
+  justify-content: center;
+}
+
+.call-to-action{
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.call-to-action-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  
+}
+
+.upper-background-color{
+  background-color: #331832;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eaeaea;
+}
+
+.lower-div{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  // background-image: url('images/woman-with-bags.jpg')
+}
+
+.login-form{
+  height: 60vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form{
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+ #signupPage{
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  // background-image: url('images/woman-with-bags.jpg')
+}
+
+.form-center{
+  text-align: center !important;
+}
+
+
+

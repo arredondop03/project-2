@@ -1,4 +1,49 @@
-<h1>Login</h1>
+<div>
+  <div class="upper-background-color">
+    <h1>Login</h1>
+  </div>
+  <div class="lower-div">
+    <div class="main main-raised login-form">
+      <form action="/login" class=" form-center" method="post">
+        <div class="form-group username ">
+          <label class="label-form">Username</label>
+          <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{#if message}}
+  <div>{{message}}</div>
+{{/if}}
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <div class="card loginFieldOut ">
+  <div class="card-body loginField ">
+  
+</div>
+</div> 
+<div class="card">
+  <div class="card-body">
+    This is some text within a card body.
+  </div>
+</div>
+
 
 <form action="/login" method="post">
   <label for="username">Username</label>
@@ -19,4 +64,4 @@
 
 
 
-<a href="/">home</a>
+<a href="/">home</a> --}}
