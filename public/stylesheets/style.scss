@@ -99,6 +99,12 @@ display: flex;
   // background-image: url('images/woman-with-bags.jpg')
 }
 
+.women-lower-div{
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+}
+
 .login-form{
   height: 60vh;
   width: 30vw;
@@ -129,5 +135,18 @@ display: flex;
   text-align: center !important;
 }
 
+#fileInput{
+display: flex;
+justify-content: center;
+}
+
+#womenSetupPage-loverDiv{
+  height: 130vh;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 
